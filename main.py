@@ -24,6 +24,11 @@ def get_new_centroids(points, indexes_for_clusters, n, k):
 
     return centroids
 
+'''
+points: 2D-array of points in (x, y) format
+k: number of clusters in dataset
+max_iter: maximum number of times the function checks for convergance.
+'''
 def kmeans(points, k, max_iter=50):
     points = points.to(device)
     n = points.shape[0]
