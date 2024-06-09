@@ -25,7 +25,7 @@ def get_new_centroids(points, indexes_for_clusters, n, k):
     return centroids
 
 '''
-points: 2D-array of points in (x, y) format
+points: 2D torch.tensor of points in (x, y) format (ex. [[1, 2], [4,5], ..])
 k: number of clusters in dataset
 max_iter: maximum number of times the function checks for convergance.
 '''
