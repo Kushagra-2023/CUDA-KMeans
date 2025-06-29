@@ -29,10 +29,10 @@ def benchmark_kmeans(configs, device):
         "n_samples", "n_clusters", "ARI", "sklearn_time", "torch_time", "percent_speedup"
     ])
 
-    print("\n📊 Final Benchmark Table:")
+    print("\nFinal Benchmark Table:")
     print(df.to_string(index=False))
 
-    print("\n📈 Summary:")
+    print("\nSummary:")
     print(f"Average ARI: {df['ARI'].mean():.4f}")
     print(f"Average % Speedup: {df['percent_speedup'].mean():.2f}%")
     print(f"Max % Speedup: {df['percent_speedup'].max():.2f}%")
